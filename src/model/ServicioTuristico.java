@@ -10,7 +10,7 @@ public class ServicioTuristico {
     }
 
     public void mostrarInformacion() {
-        System.out.println("Servicio Turistico");
+        System.out.println("Servicio Turístico");
         System.out.println("Servicio: " + nombre);
         System.out.println("Duracion Horas: " + duracionHoras);
     }

@@ -10,10 +10,9 @@ public class RutaGastronomica extends ServicioTuristico {
 
     @Override
     public void mostrarInformacion() {
-        System.out.println("Servicio Turistico");
+        System.out.println("Servicio Turístico");
         System.out.println("Ruta Gastronómica");
-        System.out.println(getNombre());
-        System.out.println(getDuracionHoras() + " horas de duración");
+        System.out.println(getNombre()+ " " + getDuracionHoras() + " horas de duración");
         System.out.println(getNumeroDeParadas() + " paradas");
     }
 

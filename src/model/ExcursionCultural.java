@@ -1,8 +1,6 @@
 package model;
 
-import org.w3c.dom.ls.LSOutput;
-
-public class ExcursionCultural {
+public class ExcursionCultural extends ServicioTuristico {
     private String lugarHistorico;
 
     public ExcursionCultural(String nombre, int duracionHoras, String lugarHistorico) {
@@ -11,7 +9,12 @@ public class ExcursionCultural {
     }
 
     @Override
-
+    public void mostrarInformacion() {
+        System.out.println("Servicio Turístico");
+        System.out.println("Excursión cultural");
+        System.out.println(getNombre() + getDuracionHoras() + "horas de duración.");
+        System.out.println("Lugar Histórico: " + lugarHistorico);
+    }
 
     public String getLugarHistorico() {
         return lugarHistorico;
