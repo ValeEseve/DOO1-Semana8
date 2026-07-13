@@ -9,6 +9,12 @@ public class ServicioTuristico {
         this.duracionHoras = duracionHoras;
     }
 
+    public void mostrarInformacion() {
+        System.out.println("Servicio Turistico");
+        System.out.println("Servicio: " + nombre);
+        System.out.println("Duracion Horas: " + duracionHoras);
+    }
+
     public String getNombre() {
         return nombre;
     }
