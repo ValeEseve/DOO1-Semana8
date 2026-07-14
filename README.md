@@ -49,7 +49,7 @@ git clone https://github.com/ValeEseve/DOO1-Semana8
 ---
 
 **Repositorio GitHub:** \https://github.com/ValeEseve/DOO1-Semana8
-**Fecha de entrega:** \[08/06/2026]
+**Fecha de entrega:** \[13/07/2026]
 
 ---
 
