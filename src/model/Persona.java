@@ -1,6 +1,6 @@
 package model;
 
-public class Persona implements Registrable {
+public abstract class Persona implements Registrable {
     private String nombre;
     private String rut;
     private String telefono;
@@ -56,7 +56,9 @@ public class Persona implements Registrable {
     }
 
     @Override
-    public void mostrarResumen() {
-
+    public String mostrarResumen() {
+        return "Nombre: " + nombre +
+                "\nRUT: " + rut +
+                "\nTeléfono: " + telefono;
     }
 }

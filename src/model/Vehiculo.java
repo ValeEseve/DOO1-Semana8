@@ -10,7 +10,8 @@ public class Vehiculo implements Registrable{
     }
 
     @Override
-    public void mostrarResumen() {
-
+    public String mostrarResumen() {
+        return "Patente: " + patente +
+                "\nEstado: " + estado;
     }
 }

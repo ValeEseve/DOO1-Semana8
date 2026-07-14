@@ -10,8 +10,9 @@ public class ColaboradorExterno extends Persona {
     }
 
     @Override
-    public void mostrarResumen() {
-        System.out.println("Colaborador: " + empresa);
+    public String mostrarResumen() {
+        return super.mostrarResumen() +
+                "\nEmpresa: " + empresa;
     }
 
     public String getEmpresa() {

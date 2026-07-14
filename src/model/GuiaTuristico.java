@@ -30,8 +30,10 @@ public class GuiaTuristico  extends Persona {
     }
 
     @Override
-    public void mostrarResumen() {
-
+    public String mostrarResumen() {
+        return super.mostrarResumen() +
+                "\nDescripción: " + descripcion +
+                "\nIdiomas: " + idiomas;
     }
 
     @Override
