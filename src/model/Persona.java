@@ -1,6 +1,6 @@
 package model;
 
-public class Persona {
+public class Persona implements Registrable {
     private String nombre;
     private String rut;
     private String telefono;
@@ -53,5 +53,10 @@ public class Persona {
                 ", telefono='" + telefono + '\'' +
                 ", direccion=" + direccion +
                 '}';
+    }
+
+    @Override
+    public void mostrarResumen() {
+
     }
 }

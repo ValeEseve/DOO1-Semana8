@@ -2,7 +2,7 @@ package model;
 
 import java.util.List;
 
-public class GuiaTuristico  extends Persona{
+public class GuiaTuristico  extends Persona {
 
     private String descripcion;
     private List<String> idiomas;
@@ -30,6 +30,11 @@ public class GuiaTuristico  extends Persona{
     }
 
     @Override
+    public void mostrarResumen() {
+
+    }
+
+    @Override
     public String toString() {
         return "GuiaTuristico{" +
                 "nombre='" + getNombre() + '\'' +
@@ -40,4 +45,6 @@ public class GuiaTuristico  extends Persona{
                 ", idiomas=" + idiomas +
                 '}';
     }
+
+
 }
