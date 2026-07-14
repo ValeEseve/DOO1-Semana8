@@ -12,7 +12,9 @@
 ## 📘 Descripción general del sistema
 
 Este proyecto corresponde a la Actividad Sumativa de la semana 8 de la asignatura Desarrollo Orientado a Objetos I. Se trata de un sistema orientado a objetos desarrollado en Java, cuyo objetivo es modelar y gestionar distintas entidades representativas de una agencia de servicios turísticos, aplicando los principios de herencia, polimorfismo e implementación de interfaces, además del uso de colecciones genéricas para el manejo de objetos y una interfaz gráfica básica mediante JOptionPane.
+
 El proyecto fue desarrollado a partir de un caso contextualizado, abordando problemáticas propias de la gestión de una agencia turística y proponiendo una solución estructurada, modular y reutilizable. Para ello, se implementó una jerarquía de clases con reutilización de código mediante herencia, una interfaz común para representar entidades registrables, el uso de polimorfismo para administrar diferentes tipos de objetos dentro de una misma colección y una interfaz gráfica simple que permite interactuar con el sistema y visualizar la información de forma amigable.
+
 ---
 
 ## 🧱 Estructura general del proyecto
