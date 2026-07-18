@@ -21,7 +21,7 @@ El proyecto fue desarrollado a partir de un caso contextualizado, abordando prob
 
 ```plaintext
 📁 src/
-├── ui/         # Package principal con el método main
+├── app/         # Package principal con el método main
 ├── data/        # Package encargada de la gestión de las entidades
 └── model/       # Package de dominio (Persona, Direccion, GuiaTuristico)
 ````
@@ -49,7 +49,7 @@ git clone https://github.com/ValeEseve/DOO1-Semana8
 ---
 
 **Repositorio GitHub:** \https://github.com/ValeEseve/DOO1-Semana8
-**Fecha de entrega:** \[13/07/2026]
+**Fecha de entrega:** \[19/07/2026]
 
 ---
 

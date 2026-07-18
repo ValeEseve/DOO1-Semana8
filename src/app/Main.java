@@ -1,9 +1,9 @@
-package ui;
+package app;
 
 import data.GestorEntidades;
 import model.Direccion;
 import model.GuiaTuristico;
-import model.Registrable;
+import interfaces.Registrable;
 import model.Vehiculo;
 
 import javax.swing.*;

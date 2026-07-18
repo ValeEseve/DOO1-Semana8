@@ -1,5 +1,7 @@
 package model;
 
+import interfaces.Registrable;
+
 public abstract class Persona implements Registrable {
     private String nombre;
     private String rut;

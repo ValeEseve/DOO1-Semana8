@@ -1,5 +1,6 @@
 package data;
 
+import interfaces.Registrable;
 import model.*;
 
 import java.util.ArrayList;
