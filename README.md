@@ -1,5 +1,5 @@
 ![Duoc UC](https://www.duoc.cl/wp-content/uploads/2022/09/logo-0.png)
-# 🧠 Actividad Sumativa / Semana 8 – Desarrollo Orientado a Objetos I
+# 🧠 EFT – Desarrollo Orientado a Objetos I
 
 ## 👤 Autor del proyecto
 - **Nombre completo:** Valentina Segura Vargas
@@ -35,7 +35,7 @@ El proyecto fue desarrollado a partir de un caso contextualizado, abordando prob
 1. Clona el repositorio desde GitHub:
 
 ```bash
-git clone https://github.com/ValeEseve/DOO1-Semana8
+git clone https://github.com/ValeEseve/DOO1-EFT
 ```
 
 2. Abre el proyecto en IntelliJ IDEA.
@@ -48,9 +48,9 @@ git clone https://github.com/ValeEseve/DOO1-Semana8
 
 ---
 
-**Repositorio GitHub:** \https://github.com/ValeEseve/DOO1-Semana8
+**Repositorio GitHub:** \https://github.com/ValeEseve/DOO1-EFT
 **Fecha de entrega:** \[19/07/2026]
 
 ---
 
-© Duoc UC | Escuela de Informática y Telecomunicaciones | Actividad Sumativa Semana 3
+© Duoc UC | Escuela de Informática y Telecomunicaciones | EFT

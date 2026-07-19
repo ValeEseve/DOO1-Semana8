@@ -3,10 +3,12 @@ package model;
 public class ServicioTuristico {
     private String nombre;
     private int duracionHoras;
+    private Direccion direccion;
 
-    public ServicioTuristico(String nombre, int duracionHoras) {
+    public ServicioTuristico(String nombre, int duracionHoras, Direccion direccion) {
         this.nombre = nombre;
         this.duracionHoras = duracionHoras;
+        this.direccion = direccion;
     }
 
     public void mostrarInformacion() {

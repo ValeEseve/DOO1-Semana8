@@ -4,11 +4,11 @@ import interfaces.Registrable;
 
 public abstract class Persona implements Registrable {
     private String nombre;
-    private String rut;
+    private Rut rut;
     private String telefono;
     private Direccion direccion;
 
-    public Persona(String nombre, String rut, String telefono, Direccion direccion) {
+    public Persona(String nombre, Rut rut, String telefono, Direccion direccion) {
         this.nombre = nombre;
         this.rut = rut;
         this.telefono = telefono;
@@ -23,11 +23,9 @@ public abstract class Persona implements Registrable {
         this.nombre = nombre;
     }
 
-    public String getRut() {
-        return rut;
-    }
+    public Rut getRut() { return rut; }
 
-    public void setRut(String rut) {
+    public void setRut(Rut rut) {
         this.rut = rut;
     }
 

@@ -16,4 +16,9 @@ public class Vehiculo implements Registrable {
         return "Patente: " + patente +
                 "\nEstado: " + estado;
     }
+
+    @Override
+    public void registrar(Producto producto) {
+        
+    }
 }
