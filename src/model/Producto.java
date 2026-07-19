@@ -3,24 +3,26 @@ package model;
 import interfaces.Registrable;
 
 public class Producto implements Registrable {
-    private int id;
+    private int codigo;
     private String nombre;
     private String descripcion;
     private double precio;
+    private int stock;
 
-    public Producto(int id, String nombre, String descripcion, double precio) {
-        this.id = id;
+    public Producto(int codigo, String nombre, String descripcion, double precio, int stock) {
+        this.codigo = codigo;
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.precio = precio;
+        this.stock = stock;
     }
 
-    public int getId() {
-        return id;
+    public String getCodigo() {
+        return codigo;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
     }
 
     public String getNombre() {
@@ -44,7 +46,18 @@ public class Producto implements Registrable {
     }
 
     public void setPrecio(double precio) {
+        if (precio < 0) {
+            throw new IllegalArgumentException("El precio no puede ser negativo.");
+        }
         this.precio = precio;
+    }
+
+    public int getStock() {
+        return stock;
+    }
+
+    public void setStock(int stock) {
+        this.stock = stock;
     }
 
     @Override
@@ -60,7 +73,7 @@ public class Producto implements Registrable {
     @Override
     public String toString() {
         return "Producto{" +
-                "id=" + id +
+                "codigo=" + codigo +
                 ", nombre='" + nombre + '\'' +
                 ", descripcion='" + descripcion + '\'' +
                 ", precio=" + precio +

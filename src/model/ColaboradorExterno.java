@@ -4,7 +4,7 @@ public class ColaboradorExterno extends Persona {
 
     private String empresa;
 
-    public ColaboradorExterno(String nombre, String rut, String telefono, Direccion direccion, String empresa) {
+    public ColaboradorExterno(String nombre, Rut rut, String telefono, Direccion direccion, String empresa) {
         super(nombre, rut, telefono, direccion);
         this.empresa = empresa;
     }
@@ -13,6 +13,11 @@ public class ColaboradorExterno extends Persona {
     public String mostrarResumen() {
         return super.mostrarResumen() +
                 "\nEmpresa: " + empresa;
+    }
+
+    @Override
+    public void registrar(Producto producto) {
+
     }
 
     public String getEmpresa() {

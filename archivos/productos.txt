@@ -1,0 +1,3 @@
+P001;Tour Lago Llanquihue;25000;10
+P002;Excursión Volcán Osorno;40000;5
+P003;Ruta Gastronómica Frutillar;35000;8

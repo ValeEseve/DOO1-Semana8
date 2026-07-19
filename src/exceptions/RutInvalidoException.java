@@ -1,6 +1,6 @@
 package exceptions;
 
-public class RutInvalidoException extends Exception {
+public class RutInvalidoException extends RuntimeException {
 
     public RutInvalidoException(String mensaje) {
         super(mensaje);

@@ -1,131 +1,55 @@
 package data;
 
 import interfaces.Registrable;
-import model.*;
+import model.OrdenDeCompra;
+import model.Producto;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Stack;
 
 public class GestorEntidades {
-
-    private final ArrayList<Registrable> entidades;
+    private List<Registrable> registrables;
+    private HashMap<String, Producto> productos;
+    private Stack<OrdenDeCompra> ordenes;
 
     public GestorEntidades() {
-        entidades = new ArrayList<>();
+        this.registrables = new ArrayList<>();
+        this.productos = new HashMap<>();
+        this.ordenes = new Stack<>();
     }
 
-    public void cargarEntidades() {
-
-        Direccion direccion1 = new Direccion("Puerto Montt", "Centro", "123");
-        Direccion direccion2 = new Direccion("Puerto Varas", "Costanera", "456");
-
-        entidades.add(new GuiaTuristico(
-                "Pedro Pérez",
-                "11.111.111-1",
-                "912345678",
-                direccion1,
-                "Guía de naturaleza",
-                Arrays.asList("Español", "Inglés")
-        ));
-
-        entidades.add(new GuiaTuristico(
-                "María Soto",
-                "22.222.222-2",
-                "987654321",
-                direccion2,
-                "Guía gastronómica",
-                Arrays.asList("Español", "Portugués")
-        ));
-
-        entidades.add(new ColaboradorExterno(
-                "Juan Muñoz",
-                "33.333.333-3",
-                "955555555",
-                direccion1,
-                "Hotel Patagonia"
-        ));
-
-        entidades.add(new Vehiculo(
-                "ABCD12",
-                "Disponible"
-        ));
-
-        entidades.add(new Vehiculo(
-                "EFGH34",
-                "En mantenimiento"
-        ));
+    public void agregarRegistrable(Registrable registrable) {
+        registrables.add(registrable);
     }
 
-    public void mostrarEntidades() {
-
-        for (Registrable entidad : entidades) {
-
-            entidad.mostrarResumen();
-
-            switch (entidad) {
-                case GuiaTuristico guiaTuristico -> System.out.println("→ Tipo: Guía Turístico");
-                case ColaboradorExterno colaboradorExterno -> System.out.println("→ Tipo: Colaborador Externo");
-                case Vehiculo vehiculo -> System.out.println("→ Tipo: Vehículo");
-                default -> {
-                }
-            }
-
-            System.out.println("--------------------------------");
-
+    public void mostrarRegistrables() {
+        for (Registrable registrable : registrables) {
+            System.out.println(registrable.mostrarResumen());
+            System.out.println("--------------------");
         }
-
     }
 
-    public void agregarEntidad(Registrable entidad) {
-        entidades.add(entidad);
+    public List<Registrable> getRegistrables() {
+        return registrables;
     }
 
-    public ArrayList<Registrable> getEntidades() {
-        return entidades;
+    public void agregarProducto(Producto producto) {
+        productos.put(producto.getCodigo(), producto);
     }
 
-    public void cargarDatosPrueba() {
-
-        Direccion direccion1 = new Direccion("Puerto Montt", "Benavente", "123");
-        Direccion direccion2 = new Direccion("Puerto Varas", "San Pedro", "456");
-        Direccion direccion3 = new Direccion("Frutillar", "Costanera", "789");
-
-        agregarEntidad(new GuiaTuristico(
-                "Pedro Pérez",
-                "11.111.111-1",
-                "912345678",
-                direccion1,
-                "Especialista en turismo aventura",
-                List.of("Español", "Inglés")
-        ));
-
-        agregarEntidad(new GuiaTuristico(
-                "María Soto",
-                "22.222.222-2",
-                "923456789",
-                direccion2,
-                "Guía gastronómica",
-                List.of("Español", "Portugués")
-        ));
-
-        agregarEntidad(new Vehiculo(
-                "ABCD12",
-                "Disponible"
-        ));
-
-        agregarEntidad(new Vehiculo(
-                "EFGH34",
-                "En mantenimiento"
-        ));
-
-        agregarEntidad(new ColaboradorExterno(
-                "Juan Muñoz",
-                "33.333.333-3",
-                "934567890",
-                direccion3,
-                "Hotel Patagonia"
-        ));
+    public Producto buscarProductoPorCodigo(String codigo) {
+        return productos.get(codigo);
     }
 
+    public void agregarOrden(OrdenDeCompra orden) {
+        ordenes.push(orden);
+    }
+
+    public void mostrarOrdenes() {
+        for (OrdenDeCompra orden : ordenes) {
+            System.out.println(orden);
+        }
+    }
 }
