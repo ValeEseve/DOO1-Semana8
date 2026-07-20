@@ -12,6 +12,7 @@
 ## 📘 Descripción general del sistema
 
 Este proyecto corresponde a la Evaluación Final Transversal (EFT) de la asignatura Desarrollo Orientado a Objetos I. Se trata de un sistema orientado a objetos desarrollado en Java, cuyo objetivo es modelar y gestionar las entidades clave de Llanquihue Tour, una agencia de turismo de la Región de Los Lagos, aplicando los principios de encapsulamiento, composición, herencia, polimorfismo e implementación de interfaces, además del uso de colecciones genéricas para el manejo de objetos y la lectura de datos desde archivos de texto.
+
 El proyecto fue desarrollado a partir de un caso contextualizado, abordando las problemáticas reales de gestión de la agencia: falta de categorización formal entre clientes, guías y proveedores, ausencia de trazabilidad en los paquetes turísticos y poca reutilización de estructuras. Para ello, se implementó una jerarquía de clases con reutilización de código mediante herencia, una interfaz común (Registrable) para representar entidades registrables, validación de atributos mediante excepciones personalizadas, el uso de polimorfismo para administrar diferentes tipos de objetos dentro de una misma colección, y clases utilitarias para la carga de datos desde archivos .txt.
 
 ---
@@ -22,6 +23,10 @@ El proyecto fue desarrollado a partir de un caso contextualizado, abordando las 
 📁 src/
 ├── app/         # Package principal con el método main
 ├── data/        # Package encargada de la gestión de las entidades
+├── exceptions/  # Excepciones personalizadas
+├── gui/         # Interfaz gráfica de la app
+├── interfaces/  # Interfaces utilizadas dentro de la app
+├── utils/       # Package para el manejo de los datos ubicados en archivos
 └── model/       # Package de dominio (Persona, Direccion, GuiaTuristico)
 ````
 
