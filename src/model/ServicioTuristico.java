@@ -1,5 +1,6 @@
 package model;
 
+/** Clase base para los distintos servicios/paquetes turísticos ofrecidos. */
 public class ServicioTuristico {
     private String nombre;
     private int duracionHoras;
@@ -14,7 +15,7 @@ public class ServicioTuristico {
     public void mostrarInformacion() {
         System.out.println("Servicio Turístico");
         System.out.println("Servicio: " + nombre);
-        System.out.println("Duracion Horas: " + duracionHoras);
+        System.out.println("Duración Horas: " + duracionHoras);
     }
 
     public String getNombre() {
@@ -33,11 +34,20 @@ public class ServicioTuristico {
         this.duracionHoras = duracionHoras;
     }
 
+    public Direccion getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(Direccion direccion) {
+        this.direccion = direccion;
+    }
+
     @Override
     public String toString() {
         return "ServicioTuristico{" +
                 "nombre='" + nombre + '\'' +
                 ", duracionHoras=" + duracionHoras +
+                ", direccion=" + direccion +
                 '}';
     }
 }

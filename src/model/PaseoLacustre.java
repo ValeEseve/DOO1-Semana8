@@ -1,10 +1,10 @@
 package model;
 
-public class PaseoLacustre extends ServicioTuristico{
-    private  String tipoEmbarcacion;
+public class PaseoLacustre extends ServicioTuristico {
+    private String tipoEmbarcacion;
 
-    public PaseoLacustre(String nombre, int duracionHoras, String tipoEmbarcacion) {
-        super(nombre, duracionHoras);
+    public PaseoLacustre(String nombre, int duracionHoras, Direccion direccion, String tipoEmbarcacion) {
+        super(nombre, duracionHoras, direccion);
         this.tipoEmbarcacion = tipoEmbarcacion;
     }
 
@@ -12,8 +12,8 @@ public class PaseoLacustre extends ServicioTuristico{
     public void mostrarInformacion() {
         System.out.println("Servicio Turístico");
         System.out.println("Paseo Lacustre");
-        System.out.println(getNombre() + " " + getDuracionHoras() +  " horas de duración");
-        System.out.println("Tipo Embarcacion: " + tipoEmbarcacion);
+        System.out.println(getNombre() + " - " + getDuracionHoras() + " horas de duración");
+        System.out.println("Tipo Embarcación: " + tipoEmbarcacion);
     }
 
     public String getTipoEmbarcacion() {
@@ -26,8 +26,6 @@ public class PaseoLacustre extends ServicioTuristico{
 
     @Override
     public String toString() {
-        return "PaseoLacustre{" +
-                "tipoEmbarcacion='" + tipoEmbarcacion + '\'' +
-                '}';
+        return "PaseoLacustre{tipoEmbarcacion='" + tipoEmbarcacion + "'} " + super.toString();
     }
 }

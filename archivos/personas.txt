@@ -1,0 +1,5 @@
+CLIENTE;Ana Torres;18234567-9;+56911111111;Los Alerces 123;Puerto Montt;Los Lagos;Frecuente
+EMPLEADO;Marco Diaz;16345678-8;+56922222222;Camino Real 45;Llanquihue;Los Lagos;Coordinador de Reservas
+PROVEEDOR;Hospedaje del Sur Ltda;77123456-9;+56933333333;Ruta 5 Km 3;Frutillar;Los Lagos;Alojamiento
+GUIA;Sofia Mora;19876543-0;+56944444444;Volcán 220;Puerto Varas;Los Lagos;Guía especializada en trekking;Español|Ingles
+COLABORADOR;Carlos Roman;76567890-0;+56955555555;Panamericana 900;Osorno;Los Lagos;Transportes Lagos SpA

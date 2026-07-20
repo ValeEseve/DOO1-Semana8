@@ -7,7 +7,7 @@ public class GuiaTuristico  extends Persona {
     private String descripcion;
     private List<String> idiomas;
 
-    public GuiaTuristico(String nombre, String rut, String telefono, Direccion direccion, String descripcion, List<String> idiomas) {
+    public GuiaTuristico(String nombre, Rut rut, String telefono, Direccion direccion, String descripcion, List<String> idiomas) {
         super(nombre, rut, telefono, direccion);
         this.descripcion = descripcion;
         this.idiomas = idiomas;
@@ -34,6 +34,11 @@ public class GuiaTuristico  extends Persona {
         return super.mostrarResumen() +
                 "\nDescripción: " + descripcion +
                 "\nIdiomas: " + idiomas;
+    }
+
+    @Override
+    public void registrar(Producto producto) {
+        // Un guía no gestiona compras de productos, por diseño
     }
 
     @Override

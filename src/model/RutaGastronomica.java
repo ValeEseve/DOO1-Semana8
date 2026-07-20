@@ -3,8 +3,8 @@ package model;
 public class RutaGastronomica extends ServicioTuristico {
     private int numeroDeParadas;
 
-    public RutaGastronomica(String nombre, int duracionHoras, int numeroDeParadas) {
-        super(nombre, duracionHoras);
+    public RutaGastronomica(String nombre, int duracionHoras, Direccion direccion, int numeroDeParadas) {
+        super(nombre, duracionHoras, direccion);
         this.numeroDeParadas = numeroDeParadas;
     }
 
@@ -12,8 +12,8 @@ public class RutaGastronomica extends ServicioTuristico {
     public void mostrarInformacion() {
         System.out.println("Servicio Turístico");
         System.out.println("Ruta Gastronómica");
-        System.out.println(getNombre()+ " " + getDuracionHoras() + " horas de duración");
-        System.out.println(getNumeroDeParadas() + " paradas");
+        System.out.println(getNombre() + " - " + getDuracionHoras() + " horas de duración");
+        System.out.println(numeroDeParadas + " paradas");
     }
 
     public int getNumeroDeParadas() {
@@ -26,8 +26,6 @@ public class RutaGastronomica extends ServicioTuristico {
 
     @Override
     public String toString() {
-        return "RutaGastronomica{" +
-                "numeroDeParadas=" + numeroDeParadas +
-                '}';
+        return "RutaGastronomica{numeroDeParadas=" + numeroDeParadas + "} " + super.toString();
     }
 }

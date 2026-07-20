@@ -15,11 +15,6 @@ public class ColaboradorExterno extends Persona {
                 "\nEmpresa: " + empresa;
     }
 
-    @Override
-    public void registrar(Producto producto) {
-
-    }
-
     public String getEmpresa() {
         return empresa;
     }
@@ -30,8 +25,6 @@ public class ColaboradorExterno extends Persona {
 
     @Override
     public String toString() {
-        return "ColaboradorExterno{" +
-                "empresa='" + empresa + '\'' +
-                '}';
+        return "ColaboradorExterno{empresa='" + empresa + "'} " + super.toString();
     }
 }

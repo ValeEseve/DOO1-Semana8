@@ -16,6 +16,11 @@ public class Rut {
         }
     }
 
+    // Sobrecarga: permite crear un Rut a partir de un solo String "12345678-9"
+    public Rut(String rutCompleto) throws RutInvalidoException {
+        this(rutCompleto.split("-")[0], rutCompleto.split("-")[1].charAt(0));
+    }
+
     public String getNumero() {
         return numero;
     }
@@ -30,18 +35,13 @@ public class Rut {
     }
 
     private boolean validarRut() {
-
         int suma = 0;
         int multiplicador = 2;
 
         for (int i = numero.length() - 1; i >= 0; i--) {
-
             int digito = Character.getNumericValue(numero.charAt(i));
-
             suma += digito * multiplicador;
-
             multiplicador++;
-
             if (multiplicador > 7) {
                 multiplicador = 2;
             }
@@ -51,7 +51,6 @@ public class Rut {
         int resultado = 11 - resto;
 
         char dvCalculado;
-
         if (resultado == 11) {
             dvCalculado = '0';
         } else if (resultado == 10) {

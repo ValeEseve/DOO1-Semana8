@@ -1,0 +1,4 @@
+EXCURSION;Recorrido Historico Puerto Varas;3;Av. Costanera 100;Puerto Varas;Los Lagos;Museo Colono Aleman
+PASEO;Navegacion Lago Llanquihue;2;Costanera s/n;Llanquihue;Los Lagos;Catamaran
+RUTA;Ruta de Sabores del Lago;4;Camino Ensenada km 5;Puerto Varas;Los Lagos;5
+EXCURSION;City Tour Frutillar;2;Vicente Perez Rosales 20;Frutillar;Los Lagos;Teatro del Lago

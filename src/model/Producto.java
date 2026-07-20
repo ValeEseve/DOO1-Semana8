@@ -1,15 +1,13 @@
 package model;
 
-import interfaces.Registrable;
-
-public class Producto implements Registrable {
-    private int codigo;
+public class Producto {
+    private String codigo;
     private String nombre;
     private String descripcion;
     private double precio;
     private int stock;
 
-    public Producto(int codigo, String nombre, String descripcion, double precio, int stock) {
+    public Producto(String codigo, String nombre, String descripcion, double precio, int stock) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.descripcion = descripcion;
@@ -21,7 +19,7 @@ public class Producto implements Registrable {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
+    public void setCodigo(String codigo) {
         this.codigo = codigo;
     }
 
@@ -61,22 +59,13 @@ public class Producto implements Registrable {
     }
 
     @Override
-    public String mostrarResumen() {
-        return "";
-    }
-
-    @Override
-    public void registrar(Producto producto) {
-
-    }
-
-    @Override
     public String toString() {
         return "Producto{" +
-                "codigo=" + codigo +
+                "codigo='" + codigo + '\'' +
                 ", nombre='" + nombre + '\'' +
                 ", descripcion='" + descripcion + '\'' +
                 ", precio=" + precio +
+                ", stock=" + stock +
                 '}';
     }
 }
